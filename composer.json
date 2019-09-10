@@ -1,15 +1,15 @@
 {
-    "name": "joker/joker-laravel-tool",
-    "description": "joker laravel tool",
+    "name": "ouzhou/ouzhou-laravel-tool",
+    "description": "ouzhou laravel tool",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "OuZhou\\JokerLaravelTool\\": "src"
+            "OuZhou\\ouzhouLaravelTool\\": "src"
         }
     },
     "authors": [
         {
-            "name": "Joker-oz",
+            "name": "ouzhou-oz",
             "email": "jw.oz@outlook.com"
         }
     ],

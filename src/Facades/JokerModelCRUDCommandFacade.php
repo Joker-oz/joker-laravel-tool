@@ -1,15 +1,15 @@
 <?php
 
 
-namespace OuZhou\JokerLaravelTool\Facades;
+namespace OuZhou\OuZhouLaravelTool\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
 
-class JokerModelCRUDCommandFacade extends Facade
+class OuZhouModelCRUDCommandFacade extends Facade
 {
 	protected static function getFacadeAccessor()
 	{
-		return 'JokerModelCRUDCommand';
+		return 'OuZhouModelCRUDCommand';
 	}
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace OuZhou\JokerLaravelTool\Console\Commands;
+namespace OuZhou\OuZhouLaravelTool\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class JokerModelCommonClassCommand extends Command
+class OuZhouModelCommonClassCommand extends Command
 {
 	// 必须app开头
 	const MODEL_COMMON_PATH = 'App\Databases\Models\Commons';
@@ -28,7 +28,7 @@ class JokerModelCommonClassCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'joker:commonClass';
+    protected $signature = 'ouzhou:commonClass';
 
     /**
      * The console command description.
@@ -74,7 +74,7 @@ class JokerModelCommonClassCommand extends Command
 	/**
 	 * Function: modelFunctions
 	 * Notes: 通用模型配置
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:05
 	 */
@@ -85,7 +85,7 @@ class JokerModelCommonClassCommand extends Command
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 *
 */
@@ -163,7 +163,7 @@ CODE;
 	/**
 	 * Function: actionFunctions
 	 * Notes: 通用模型CUD操作生成
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:38
 	 */
@@ -174,7 +174,7 @@ CODE;
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 *
 */
@@ -258,7 +258,7 @@ abstract class @{class}
 	/**
 	 * Function: updateWhereIn
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-16  11:52
 	 * @param array \$where
@@ -297,7 +297,7 @@ abstract class @{class}
 	/**
 	 * Function: updateBatch
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-30  12:02
 	 * @param array \$needUpdatedData
@@ -391,7 +391,7 @@ CODE;
 	/**
 	 * Function: repositoryFunctions
 	 * Notes: 模型通用R操作生成
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:46
 	 */
@@ -403,7 +403,7 @@ CODE;
 namespace @{namespace};
 
 use Closure;
-use App\Tools\Library\JokerTool;
+use App\Tools\Library\OuZhouTool;
 use Illuminate\Database\Eloquent\Builder;
 use @{commonModelPackage};
 use App\Databases\Models\Exceptions\ModelInitializeFailException;
@@ -484,8 +484,8 @@ abstract class @{class}
 	
 	/**
 	 * Function: getListPlus
-	 * Notes: Joker自定义分页加强版v2.0
-	 * User: Joker-oz
+	 * Notes: OuZhou自定义分页加强版v2.0
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-27  16:11
 	 * @param int \$pageSize
@@ -496,13 +496,13 @@ abstract class @{class}
 	 */
 	public function getListPlusTwo(int \$pageSize = 10, int \$page = 1,array \$where = [], array \$column = ['*'])
 	{
-		return \$this->model->where(\$where)->select(\$column)->jokerPaginate(\$pageSize, \$page);
+		return \$this->model->where(\$where)->select(\$column)->ouzhouPaginate(\$pageSize, \$page);
 	}
 	
 	/**
 	 * Function: getListPlusTwo
-	 * Notes: Joker自定义分页加强版v1.0
-	 * User: Joker-oz
+	 * Notes: OuZhou自定义分页加强版v1.0
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-27  16:11
 	 * @param int \$pageSize
@@ -514,13 +514,13 @@ abstract class @{class}
 	public function getListPlus(int \$pageSize = 10, int \$page = 1,array \$where = [], array \$column = ['*'])
 	{
 		\$query = \$this->model->where(\$where)->select(\$column)->getQuery();
-		return JokerTool::basePaginate(\$query, \$pageSize, \$page);
+		return OuZhouTool::basePaginate(\$query, \$pageSize, \$page);
 	}
 	
 	/**
 	 * Function: getList
 	 * Notes: 分页
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-08  13:54
 	 * @param int \$pageSize 每页需要多少
@@ -537,7 +537,7 @@ abstract class @{class}
 	/**
 	 * Function: getCount
 	 * Notes: 返回每列数量
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-08  14:12
 	 * @param array \$where
@@ -565,7 +565,7 @@ abstract class @{class}
 	/**
 	 * Function: get
 	 * Notes: 获取符合条件的数据
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-08  18:38
 	 * @param array \$where
@@ -585,7 +585,7 @@ abstract class @{class}
 	/**
 	 * Function: getPluck
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-16  11:24
 	 * @param array \$column
@@ -600,7 +600,7 @@ abstract class @{class}
 	/**
 	 * Function: getPluck
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-08-16  11:24
 	 * @param array \$column
@@ -615,7 +615,7 @@ abstract class @{class}
 	/**
 	 * Function: getColumnMin
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:42
 	 * @param string \$column
@@ -655,7 +655,7 @@ CODE;
 	/**
 	 * Function: modelExceptions
 	 * Notes: 模型异常初始化
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:25
 	 */
@@ -675,7 +675,7 @@ CODE;
 	/**
 	 * Function: modelExceptions
 	 * Notes: 模型异常初始化
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:25
 	 */
@@ -693,7 +693,7 @@ CODE;
 	/**
 	 * Function: modelExceptions
 	 * Notes: 模型异常初始化
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:25
 	 */
@@ -711,7 +711,7 @@ CODE;
 	/**
 	 * Function: exceptionFormat
 	 * Notes: 异常格式
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:11
 	 * @return string
@@ -723,7 +723,7 @@ CODE;
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 *
 */
@@ -749,7 +749,7 @@ CODE;
 	/**
 	 * Function: exceptionGenerator
 	 * Notes: 异常生成器
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  18:23
 	 * @param array $exceptions
@@ -773,7 +773,7 @@ CODE;
 	/**
 	 * Function: saveToFile
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  15:34
 	 * @param $file

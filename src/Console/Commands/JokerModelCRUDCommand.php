@@ -1,10 +1,10 @@
 <?php
 
-namespace OuZhou\JokerLaravelTool\Console\Commands;
+namespace OuZhou\OuZhouLaravelTool\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class JokerModelCRUDCommand extends Command
+class OuZhouModelCRUDCommand extends Command
 {
 	const MODEL_DIR = './app/Databases/Models/';
 	const SERVICE_DIR = './app/Databases/Services/';
@@ -25,7 +25,7 @@ class JokerModelCRUDCommand extends Command
 	 *
 	 * @var string
 	 */
-	protected $signature = 'joker:model {modelName}';
+	protected $signature = 'ouzhou:model {modelName}';
 	
 	/**
 	 * The console command description.
@@ -67,7 +67,7 @@ class JokerModelCRUDCommand extends Command
 	/**
 	 * Function: modelGenerator
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  15:41
 	 * @param $config
@@ -79,7 +79,7 @@ class JokerModelCRUDCommand extends Command
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 */
 namespace @{namespace};
@@ -135,7 +135,7 @@ CODE;
 	/**
 	 * Function: actionGenerator
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  16:32
 	 * @param $config
@@ -147,7 +147,7 @@ CODE;
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 */
 namespace @{namespace};
@@ -216,7 +216,7 @@ CODE;
 	/**
 	 * Function: repositoryGenerator
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  16:32
 	 * @param $config
@@ -228,7 +228,7 @@ CODE;
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 */
 namespace @{namespace};
@@ -297,7 +297,7 @@ CODE;
 	/**
 	 * Function: serviceGenerator
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  16:32
 	 * @param $config
@@ -309,7 +309,7 @@ CODE;
 
 /**
 *
-* Author: Joker-oz
+* Author: ouzhou1611
 * Date: 2019-09-09
 */
 namespace @{namespace};
@@ -388,7 +388,7 @@ CODE;
 	/**
 	 * Function: getConfigInfo
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  15:19
 	 * @param $_this
@@ -434,7 +434,7 @@ CODE;
 	/**
 	 * Function: saveToFile
 	 * Notes:
-	 * User: Joker-oz
+	 * User: ouzhou1611
 	 * Email: <jw.oz@outlook.com>
 	 * Date: 2019-09-09  15:34
 	 * @param $file

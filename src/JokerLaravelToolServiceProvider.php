@@ -1,12 +1,12 @@
 <?php
 
-namespace OuZhou\JokerLaravelTool;
+namespace OuZhou\OuZhouLaravelTool;
 
 use Illuminate\Support\ServiceProvider;
-use OuZhou\JokerLaravelTool\Console\Commands\JokerModelCommonClassCommand;
-use OuZhou\JokerLaravelTool\Console\Commands\JokerModelCRUDCommand;
+use OuZhou\OuZhouLaravelTool\Console\Commands\OuZhouModelCommonClassCommand;
+use OuZhou\OuZhouLaravelTool\Console\Commands\OuZhouModelCRUDCommand;
 
-class JokerLaravelToolServiceProvider extends ServiceProvider
+class OuZhouLaravelToolServiceProvider extends ServiceProvider
 {
 	/**
 	 * 服务提供者加是否延迟加载.
@@ -23,8 +23,8 @@ class JokerLaravelToolServiceProvider extends ServiceProvider
 	{
 		if ($this->app->runningInConsole()) {
 			$this->commands([
-				JokerModelCRUDCommand::class,
-				JokerModelCommonClassCommand::class,
+				OuZhouModelCRUDCommand::class,
+				OuZhouModelCommonClassCommand::class,
 			]);
 		}
 	}
@@ -35,8 +35,8 @@ class JokerLaravelToolServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$this->app->singleton('JokerModelCRUDCommand', function () {
-			return new JokerModelCRUDCommand;
+		$this->app->singleton('OuZhouModelCRUDCommand', function () {
+			return new OuZhouModelCRUDCommand;
 		});
 	}
 	/**
