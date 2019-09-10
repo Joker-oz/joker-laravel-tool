@@ -1,16 +1,16 @@
 {
     "name": "ouzhou/ouzhou-laravel-tool",
     "description": "ouzhou laravel tool",
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0.1",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "OuZhou\\ouzhouLaravelTool\\": "src"
+            "OuZhou\\OuZhouLaravelTool\\": "src"
         }
     },
     "authors": [
         {
-            "name": "ouzhou-oz",
+            "name": "ouzhou",
             "email": "jw.oz@outlook.com"
         }
     ],
