@@ -1,0 +1,17 @@
+{
+    "name": "joker/joker-laravel-tool",
+    "description": "joker laravel tool",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JokerOZ\\JokerLaravelTool\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joker-oz",
+            "email": "jw.oz@outlook.com"
+        }
+    ],
+    "require": {}
+}
