@@ -1,7 +1,7 @@
 <?php
 
 
-namespace JokerOZ\JokerLaravelTool\Facades;
+namespace OuZhou\JokerLaravelTool\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

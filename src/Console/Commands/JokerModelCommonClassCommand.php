@@ -1,6 +1,6 @@
 <?php
 
-namespace JokerOZ\JokerLaravelTool\Console\Commands;
+namespace OuZhou\JokerLaravelTool\Console\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace JokerOZ\JokerLaravelTool;
+namespace OuZhou\JokerLaravelTool;
 
 use Illuminate\Support\ServiceProvider;
-use JokerOZ\JokerLaravelTool\Console\Commands\JokerModelCommonClassCommand;
-use JokerOZ\JokerLaravelTool\Console\Commands\JokerModelCRUDCommand;
+use OuZhou\JokerLaravelTool\Console\Commands\JokerModelCommonClassCommand;
+use OuZhou\JokerLaravelTool\Console\Commands\JokerModelCRUDCommand;
 
 class JokerLaravelToolServiceProvider extends ServiceProvider
 {
