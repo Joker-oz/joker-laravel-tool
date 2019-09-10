@@ -1,6 +1,7 @@
 {
     "name": "ouzhou/ouzhou-laravel-tool",
     "description": "ouzhou laravel tool",
+    "minimum-stability": "dev",
     "license": "MIT",
     "autoload": {
         "psr-4": {
